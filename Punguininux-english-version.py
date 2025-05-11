@@ -124,8 +124,26 @@ def play_hangman_game():
     """
     Implements a simple Hangman game.
     """
-    words = ["python", "computer", "programming", "hangman", "game", "word", "cmd", "idc", "copylinux", "nul", "bravo",
-             "ghghg", "caveriendire", "impossible45645645642149631541614634136", "google"]
+    words = [
+    "python",       
+    "computer",     
+    "programming",  
+    "hangman",      
+    "game",        
+    "word",        
+    "command",     
+    "terminal",    
+    "linux",        
+    "keyboard",     
+    "monitor",      
+    "developer",    
+    "variable",    
+    "function",     
+    "loop",         
+    "debug",        
+    "google"       
+]
+
     secret_word = random.choice(words)
     found_letters = []
     attempts_left = 6
@@ -183,7 +201,7 @@ def draw_shape():
     turtle.pendown()
     turtle.right(90)
 
-    # Draw a filled red shape
+    
     turtle.fillcolor("red")
     turtle.begin_fill()
     turtle.circle(10, 180)
@@ -212,7 +230,7 @@ def draw_shape():
     turtle.circle(150, 90)
     turtle.end_fill()
 
-    # Draw eyes or facial features
+    
     turtle.left(150)
     turtle.circle(-90, 70)
     turtle.left(20)
@@ -226,13 +244,13 @@ def draw_shape():
     turtle.circle(-80, 98)
     turtle.setheading(-83)
 
-    # Draw mouth or additional features
+    
     turtle.forward(30)
     turtle.left(90)
     turtle.forward(25)
     turtle.left(45)
 
-    # Draw a green filled shape (possibly a hat or accessory)
+    
     turtle.fillcolor("green")
     turtle.begin_fill()
     turtle.circle(-80, 90)
@@ -240,7 +258,7 @@ def draw_shape():
     turtle.circle(-80, 90)
     turtle.end_fill()
 
-    # Draw more features
+    
     turtle.right(135)
     turtle.forward(60)
     turtle.left(180)
@@ -248,7 +266,7 @@ def draw_shape():
     turtle.left(90)
     turtle.forward(80)
 
-    # Draw the other eye or accessory
+    
     turtle.right(90)
     turtle.right(45)
     turtle.fillcolor("green")
@@ -258,7 +276,7 @@ def draw_shape():
     turtle.circle(80, 90)
     turtle.end_fill()
 
-    # Final touches
+    
     turtle.left(135)
     turtle.forward(60)
     turtle.left(180)
